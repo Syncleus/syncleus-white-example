@@ -1,0 +1,1 @@
+This is a template along with an example on how to use the syncleus-white latex template with R flavored markdown. Just run make and it should compile as a PDF. Make sure you have R studio installed or rscript and all needed dependencies.
