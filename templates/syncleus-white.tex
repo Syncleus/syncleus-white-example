@@ -4,9 +4,10 @@
 \usepackage{mathtools}
 \usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{float}
+\usepackage[pdftex]{graphicx}
+\usepackage{./templates/graphviz}
 
 \usepackage[$if(geometry)$$geometry$$else$left=2cm, right=2cm, top=2.25cm, bottom=2.25cm, headheight=13.6pt, letterpaper$endif$]{geometry}
 
@@ -29,6 +30,8 @@ $if(draft)$\draft{$draft$}$endif$
 \setlength{\parindent}{$if(indent)$$indent$$else$0pt$endif$}
 \setlength{\parskip}{$if(parskip)$$parskip$$else$3mm$endif$}
 \definecolor{color1}{RGB}{$if(title-color)$$title-color$$else$0,0,0$endif$}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 %----------------------------------------------------------------------------------------
 %	ARTICLE INFORMATION
